@@ -80,17 +80,39 @@ public class MathFunction extends CheckBool {
     }
 
     public void minValue() {
-        System.out.println("Enter two numbers to know which is the min value:");
-        num1 = scanner.nextDouble(); // Accept the first number
-        num2 = scanner.nextDouble(); // Accept the second number
-        System.out.println("Min value of " + num1 + " and " + num2 + " = " + Math.min(num1, num2));
+        System.out.print("How many numbers do you want to compare? ");
+        int n = scanner.nextInt();
+        double[] numbers = new double[n];
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter a number: ");
+            double num = scanner.nextDouble();
+            numbers[i] = num;
+        }
+        double minNum = numbers[0];
+        for (int i = 1; i < n; i++) {
+            if (numbers[i] < minNum) {
+                minNum = numbers[i];
+            }
+        }
+        System.out.println("The minimum value is: " + minNum);
     }
 
     public void maxValue() {
-        System.out.println("Enter two numbers to know the max value:");
-        num1 = scanner.nextDouble(); //Accept the first number
-        num2 = scanner.nextDouble(); //Accept the second number
-        System.out.println("Max value of " + num1 + " and " + num2 + " = " + Math.max(num1, num2));
+        System.out.print("How many numbers do you want to compare? ");
+        int n = scanner.nextInt();
+        double[] numbers = new double[n];
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter a number: ");
+            double num = scanner.nextDouble();
+            numbers[i] = num;
+        }
+        double maxNum = numbers[0];
+        for (int i = 1; i < n; i++) {
+            if (numbers[i] > maxNum) {
+                maxNum = numbers[i];
+            }
+        }
+        System.out.println("The maximum value is: " + maxNum);
     }
 
     public void sin() {
