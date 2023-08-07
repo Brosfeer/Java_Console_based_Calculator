@@ -1,9 +1,12 @@
-
 package e_project_of_aptech;
 
+import com.sun.org.apache.bcel.internal.generic.GOTO;
+import java.util.Scanner;
 
 public class CheckBool {
-    
+
+    Scanner input = new Scanner(System.in);
+
     /**
      *
      * This method takes an integer as input and checks if it is a palindrome
@@ -23,20 +26,21 @@ public class CheckBool {
 // Compare the original number with the reversed number to check if it is a palindrome.
         return original == reversed;
     }
-     /**
+
+    /**
      * Checks if a given number is an Armstrong number.
      *
      * @param number The number to be checked.
      * @return True if the number is an Armstrong number, false otherwise.
      */
-    public static boolean isArmstrong(double number) {
-        double sum = 0;
-        double originalNumber = number;
-        double numberOfDigits = String.valueOf(number).length();
+    public static boolean isArmstrong(int number) {
+        int sum = 0;
+        int originalNumber = number;
+        int numberOfDigits = String.valueOf(number).length();
 
         // Calculate the sum of digits raised to the power of the number of digits
         while (number > 0) {
-            double digit = number % 10;
+            int digit = number % 10;
             sum += Math.pow(digit, numberOfDigits);
             number /= 10;
         }
@@ -51,7 +55,7 @@ public class CheckBool {
      * @param number The number to be checked.
      * @return True if the number is prime, false otherwise.
      */
-    public static boolean isPrime(int number) {
+    public static boolean isPrimeNo(int number) {
         for (int i = 2; i < number; i++) {
             if (number % i == 0) {
                 return false; // If the number is divisible by any number between 2 and itself, it is not prime.
@@ -61,8 +65,7 @@ public class CheckBool {
     }
 
     /**
-     * Finds the greatest common divisor (GCD) of two numbers.
-     *
+     * Finds the greatest common divisor (GCD) of two numbers. 2
      *
      * @return The greatest common divisor of num1 and num2.
      */
@@ -75,6 +78,4 @@ public class CheckBool {
         return num1;
     }
 
-
-    
 }
