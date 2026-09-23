@@ -1,6 +1,5 @@
 package e_project_of_aptech;
 
-import com.sun.org.apache.bcel.internal.generic.GOTO;
 import java.util.Scanner;
 
 public class CheckBool {
