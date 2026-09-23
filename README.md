@@ -241,8 +241,16 @@ java -jar dist/Java_Console_based_Calculator.jar
 
 ---
 
+## 👨‍💻 Author & Engineering Leadership
+
+Engineered with architectural discipline by **Sharaf** ([@Brosfeer](https://github.com/Brosfeer)) — Principal Mobile & Systems Architect & Founder of **SayaSky Studio**.
+
+- **GitHub**: [@Brosfeer](https://github.com/Brosfeer)
+- **Studio**: **SayaSky Studio** ([Google Play](https://play.google.com/store/apps/details?id=com.sayasky.kiddyzonetown&hl=ar))
+- **Specialization**: Mobile Systems, Real-Time Telemetry & Clean Architecture
+
+---
+
 ## 📄 License
 
 Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
-
-Crafted with engineering discipline for the **Aptech Project Showcase**.
